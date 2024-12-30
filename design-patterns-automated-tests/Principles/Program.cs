@@ -3,6 +3,8 @@ using Principles;
 using OpenClosed = Principles.OpenClosed;
 using SingleResponsibility = Principles.SingleResponsibility;
 using LiskovSubstitution = Principles.LiskovSubstitution;
+using DependencyInversion = Principles.DependencyInversion;
+using Principles.DependencyInversion;
 
 
 Console.WriteLine("Single Responsibility principle SRP");
@@ -73,3 +75,10 @@ foreach (LiskovSubstitution.IBonusPointsDiscountCalculator discountCalculator in
 {
     Console.WriteLine(discountCalculator.CalculateBonusPointsDiscount(1250, 100));
 }
+
+Console.WriteLine();
+Console.WriteLine("Dependency Inversion Principle");
+Console.WriteLine("==============================");
+
+new GoldCustomerOrder().Create();
+new PlatinumCustomerOrder().Create();
