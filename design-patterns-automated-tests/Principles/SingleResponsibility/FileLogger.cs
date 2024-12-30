@@ -1,4 +1,4 @@
-﻿namespace Principles;
+﻿namespace Principles.SingleResponsibility;
 
 public class FileLogger
 {

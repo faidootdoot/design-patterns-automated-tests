@@ -1,4 +1,4 @@
-﻿namespace Principles;
+﻿namespace Principles.SingleResponsibility;
 public class CustomerOrder
 {
 
@@ -6,7 +6,8 @@ public class CustomerOrder
 
     public void Create()
     {
-        try {
+        try
+        {
             // Create a customer order.
             throw new Exception("Unable to create customer order.");
         }

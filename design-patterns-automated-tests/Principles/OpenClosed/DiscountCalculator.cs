@@ -1,4 +1,4 @@
-﻿namespace Principles;
+﻿namespace Principles.OpenClosed;
 
 public class DiscountCalculator
 {
