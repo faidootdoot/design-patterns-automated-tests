@@ -9,5 +9,5 @@ public abstract class Element
     public abstract bool? Displayed { get; }
     public abstract void TypeText(string text);
     public abstract void Click();
-    public abstract string GetAttribute(string attributeName);
+    public abstract string GetDomAttribute(string attributeName);
 }

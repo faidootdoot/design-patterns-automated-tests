@@ -3,13 +3,12 @@ using OpenQA.Selenium.Support.UI;
 using SeleniumExtras.WaitHelpers;
 
 namespace Chapter_02_Selenium.src;
-public class WebElement : Element
+public class WebElement(IWebDriver webDriver, IWebElement webElement, By by) : Element
 {
-    private readonly IWebDriver _webDriver;
-    private readonly IWebElement _webElement;
-    private readonly By _by;
-
-    public WebElement(IWebDriver webDriver, IWebElement webElement, By by) => (_webDriver, _webElement, _by) = (webDriver, webElement, by);
+    // Set using the primary constructor that is CSharp 12 feature
+    private readonly IWebDriver _webDriver = webDriver;
+    private readonly IWebElement _webElement = webElement;
+    private readonly By _by = by;
 
     public override By By => _by;
 
@@ -25,7 +24,7 @@ public class WebElement : Element
         _webElement?.Click();
     }
 
-    public override string GetAttribute(string attributeName) =>  _webElement?.GetDomAttribute(attributeName)!;
+    public override string GetDomAttribute(string attributeName) =>  _webElement?.GetDomAttribute(attributeName)!;
     
     public override void TypeText(string text)
     {
