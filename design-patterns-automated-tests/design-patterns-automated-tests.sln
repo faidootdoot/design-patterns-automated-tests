@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35527.113 d17.12
+VisualStudioVersion = 17.12.35527.113
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutomatedTests", "AutomatedTests\AutomatedTests.csproj", "{8D99B3D9-DE92-4B81-BF63-26134FA07B0A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Principles", "Principles\Principles.csproj", "{29031DF8-94ED-4681-88EF-1300542AEC7D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chapter-02-Selenium", "Chapter-02-Selenium\Chapter-02-Selenium.csproj", "{FBA2D9A0-7940-46C4-B89C-DF5EAE3361D7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{29031DF8-94ED-4681-88EF-1300542AEC7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{29031DF8-94ED-4681-88EF-1300542AEC7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{29031DF8-94ED-4681-88EF-1300542AEC7D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FBA2D9A0-7940-46C4-B89C-DF5EAE3361D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBA2D9A0-7940-46C4-B89C-DF5EAE3361D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FBA2D9A0-7940-46C4-B89C-DF5EAE3361D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBA2D9A0-7940-46C4-B89C-DF5EAE3361D7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
