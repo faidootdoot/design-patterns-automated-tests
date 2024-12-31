@@ -7,6 +7,8 @@ using OpenQA.Selenium.IE;
 using OpenQA.Selenium.Safari;
 using OpenQA.Selenium.Support.UI;
 using SeleniumExtras.WaitHelpers;
+using WebDriverManager.DriverConfigs.Impl;
+using WebDriverManager;
 
 namespace Chapter_02_Selenium.src;
 
@@ -20,18 +22,23 @@ public class WebDriver : Driver
         switch (browser)
         {
             case Browser.Chrome:
-                _webDriver = new ChromeDriver(Environment.CurrentDirectory);
+                new DriverManager().SetUpDriver(new ChromeConfig());
+                _webDriver = new ChromeDriver();
                 break;
             case Browser.Firefox:
+                new DriverManager().SetUpDriver(new FirefoxConfig());
                 _webDriver = new FirefoxDriver(Environment.CurrentDirectory);
                 break;
             case Browser.Edge:
+                new DriverManager().SetUpDriver(new EdgeConfig());
                 _webDriver = new EdgeDriver(Environment.CurrentDirectory);
                 break;
-            case Browser.Safari:
-                _webDriver = new SafariDriver(Environment.CurrentDirectory);
-                break;
+            //case Browser.Safari:
+            //    new DriverManager().SetUpDriver(new Safar());
+            //    _webDriver = new SafariDriver(Environment.CurrentDirectory);
+            //    break;
             case Browser.InternetExplorer:
+                new DriverManager().SetUpDriver(new InternetExplorerConfig());
                 _webDriver = new InternetExplorerDriver(Environment.CurrentDirectory);
                 break;
             case Browser.NotSet:
