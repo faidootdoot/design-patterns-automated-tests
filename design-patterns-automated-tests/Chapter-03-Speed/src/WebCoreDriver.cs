@@ -4,18 +4,17 @@ using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Edge;
 using OpenQA.Selenium.Firefox;
 using OpenQA.Selenium.IE;
-using OpenQA.Selenium.Safari;
 using OpenQA.Selenium.Support.UI;
 using SeleniumExtras.WaitHelpers;
 using WebDriverManager.DriverConfigs.Impl;
 using WebDriverManager;
 
-namespace Chapter_02_Selenium.src;
+namespace Chapter_03_Speed.src;
 
 /// <summary>
 /// Simple factory design pattern to create a WebDriver instance
 /// </summary>
-public class WebDriver : Driver
+public class WebCoreDriver : Driver
 {
     private IWebDriver _webDriver;
     private WebDriverWait _webDriverWait;
@@ -53,6 +52,7 @@ public class WebDriver : Driver
         _webDriverWait = new WebDriverWait(_webDriver, TimeSpan.FromSeconds(30));
     }
 
+
     public override void Quit()
     {
         _webDriver.Quit();
@@ -82,5 +82,15 @@ public class WebDriver : Driver
             elements.Add(logElement);
         }
         return elements;
+    }
+
+    public override void WaitForAjax()
+    {
+        var js = (IJavaScriptExecutor)_webDriver;
+        _webDriverWait.Until(wd => (bool)js.ExecuteScript("return jQuery.active == 0"));
+    }
+    public override void WaitUntilPageLoadsCompletely()
+    {
+        _webDriverWait.Until(wd => ((IJavaScriptExecutor)_webDriver).ExecuteScript("return document.readyState").Equals("complete"));
     }
 }

@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Principles", "Principles\Pr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chapter-02-Selenium", "Chapter-02-Selenium\Chapter-02-Selenium.csproj", "{FBA2D9A0-7940-46C4-B89C-DF5EAE3361D7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chapter-03-Speed", "Chapter-03-Speed\Chapter-03-Speed.csproj", "{4BCC0B03-BF41-4E69-9A5F-90FE9D0389A9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{FBA2D9A0-7940-46C4-B89C-DF5EAE3361D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FBA2D9A0-7940-46C4-B89C-DF5EAE3361D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FBA2D9A0-7940-46C4-B89C-DF5EAE3361D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4BCC0B03-BF41-4E69-9A5F-90FE9D0389A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4BCC0B03-BF41-4E69-9A5F-90FE9D0389A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4BCC0B03-BF41-4E69-9A5F-90FE9D0389A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4BCC0B03-BF41-4E69-9A5F-90FE9D0389A9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

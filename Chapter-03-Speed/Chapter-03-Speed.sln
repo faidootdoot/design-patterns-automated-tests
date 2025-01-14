@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35527.113 d17.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chapter-03-Speed", "Chapter-03-Speed\Chapter-03-Speed.csproj", "{68A40575-B673-410E-AA56-5555681A022B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{68A40575-B673-410E-AA56-5555681A022B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68A40575-B673-410E-AA56-5555681A022B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68A40575-B673-410E-AA56-5555681A022B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68A40575-B673-410E-AA56-5555681A022B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
