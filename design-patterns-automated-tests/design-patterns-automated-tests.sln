@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chapter-02-Selenium", "Chap
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chapter-03-Speed", "Chapter-03-Speed\Chapter-03-Speed.csproj", "{4BCC0B03-BF41-4E69-9A5F-90FE9D0389A9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chapter-03-Classic-Observer-Pattern", "Chapter-03-Classic-Observer-Pattern\Chapter-03-Classic-Observer-Pattern.csproj", "{CDD6A221-B401-48AE-94DA-4261324B5AE7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{4BCC0B03-BF41-4E69-9A5F-90FE9D0389A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4BCC0B03-BF41-4E69-9A5F-90FE9D0389A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4BCC0B03-BF41-4E69-9A5F-90FE9D0389A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CDD6A221-B401-48AE-94DA-4261324B5AE7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CDD6A221-B401-48AE-94DA-4261324B5AE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CDD6A221-B401-48AE-94DA-4261324B5AE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CDD6A221-B401-48AE-94DA-4261324B5AE7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
